@@ -4,7 +4,7 @@ REM +++++++++++++++++
 REM
 REM *~ ShortCut-Destroyer ~*
 REM
-REM For resarch porposes only
+REM For research purposes only
 REM
 REM Henry Samuelson, Christopher Hansen 
 
